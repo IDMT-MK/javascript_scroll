@@ -29,6 +29,7 @@ const show2 = (entries, obs) => {
         if (entry.isIntersecting){
         const keyframes = {
             opacity: [0, 1],
+            translate: ['-200px 0', 0]
         }
         entry.target.animate(keyframes, 600);
         //一度表示されたら止める
